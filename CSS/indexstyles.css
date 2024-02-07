@@ -1,0 +1,213 @@
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --medium-grey: #abb8c3;
+    --soft-grey: #ececec;
+    --dark-grey: #4b4b4b;
+    --ambar: #fcb900;
+    --background-grey: #f7f8f8;
+    --button-grey: #ebebeb;
+    --menu-background-button: #55595c;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.8rem;
+
+   }
+   *{
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+      
+   }
+   html{
+   font-size: 62.5%;
+   font-family: 'Poppins', sans-serif;
+   color: var(--black);
+   background-color: var(--background-grey);
+   }
+   a {
+    text-decoration: none;
+   }
+   header{
+   width: 100%;
+   min-width: 320px;
+   height: 480px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   }
+    nav {
+    display: flex;
+    height: 90px;
+    padding: 10px;
+    }
+    .header--navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--white);
+        border-radius: 5px;
+    }
+     .logo{
+    height: 50px;
+    }
+    header .navbar-right ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    header .navbar-right img{
+        width: 50px;
+        height: 20px;
+    }
+    header .navbar-right img:hover{
+        width: 50px;
+        height: 30px;
+    }
+    .header--wrapper {
+        margin: 0 10px 5px 10px;
+        background-color: var(--soft-grey);
+        display: flex;
+        flex-direction: column;
+        height: 360px;
+        border-radius: 5px;
+    }
+    header img{
+        height: 180px;
+    }
+    .header--title-container{
+        width: 90%;
+        min-width: 280px;
+        max-width: 900px;
+        text-align: center;
+        align-self: center;
+    }
+    .header--title-container h1{
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+    }
+    .header--title-container p{
+        margin-top: 25px;
+        font-size: var(--sm);
+    }
+    .header--title-container .header--button {
+        position: absolute;
+        left: calc(50% - 114px);
+        top: 390px;
+        display: block;
+        margin-top: 35px;
+        padding: 10px;
+        width: 230px;
+        height: 44px;
+        background-color: var(--ambar);
+        box-shadow: 0px 4px 8px var(--medium-grey);
+        border: none;
+        border-radius: 5px;
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .header--button span {
+        display: inline-block;
+        width: 13px;
+        height: 8px;
+        margin-left: 10px;
+        background-image: url(/assets/icons/double-arrow.svg);
+        background-repeat: no-repeat;
+    }
+    main{
+        width: 100%;
+        min-width: 320px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        }
+    .service-container--slider {
+        display: flex;
+        height: 200px;
+        margin: 0 10px 10px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        background-color: var(--white);
+        border-radius: 5px;
+        }
+    .service-container--image img{
+        position: relative;
+        scroll-snap-align: center;
+        height: 150px;
+        margin: 10px;
+        border: solid 1px var(--ambar);
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px var(--medium-grey);
+
+        }
+    .main--products {
+        margin: 0 10px;
+        background-color: var(--soft-grey);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+    .main--title-container{
+        width: 90%;
+        min-width: 280px;
+        max-width: 900px;
+        text-align: center;
+        align-self: center;
+        margin: 10px;
+    }
+    .main--title-container h2{
+        font-size: var(--lg);
+        font-weight: bold;
+        line-height: 2.6rem;
+        margin-top: 20px;
+    }
+    .main--title-container p{
+        margin-top: 25px;
+        font-size: var(--sm);
+        margin-bottom: 25px;
+    }
+    .product-cards--container{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-detail--card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        min-width: 280px;
+        max-width: 400px;
+        height: 120px;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: var(--dark-grey);
+        color: var(--white);     
+    }
+    .product-detail--card .proicon{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+        background-image: url(/assets/icons/MotorPro02.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .product-detail--card--text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 170px;
+        height: auto;
+    }
+    .product-detail--card--text h3{
+        font-size: var(--md);
+    }
+    .product-detail--card--text p{
+        margin-top: 5px;
+    }
